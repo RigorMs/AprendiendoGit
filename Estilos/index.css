@@ -1,0 +1,44 @@
+﻿
+                /*Inicio Carrusel*/
+@keyframes cambio {
+    0%{ margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% {margin-left: -100%; }
+    45% {margin-left: -100%; }
+
+    50% {margin-left: -200%; }
+    70% {margin-left: -200%; }
+
+    75% {margin-left: -300%; }
+    100%{margin-left: -300%; }
+}
+/*Controla la seccion donde se encuentra*/
+.carrusel{
+    width: 100%; /*Tamaño del ancho del carrusel*/
+    overflow: hidden;
+    margin: top;
+    text-align: center;
+    border-radius: 10px;
+}
+/*El total que recorrera*/
+.carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 400%; 
+
+    animation: cambio 15s infinite;
+    animation-direction: normal;
+}
+/*Representa el tamaño de el renglon de la lista*/
+.carrusel li{ 
+    width: 100%;
+    list-style: none;
+}
+/*indica la distancia que debe recorrer la imagen*/
+.carrusel img{ 
+    width: 100%;
+    height: 750px; /*Tamaño de las imagenes del carrusel*/
+}
+                            /*Final carrucel*/
+
